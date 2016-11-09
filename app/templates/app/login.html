@@ -1,3 +1,25 @@
+{% load staticfiles %}
 <html>
-	<body>Login Page </body>
+	<head>
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="{% static 'app/login.css' %}">
+		<title>The Grand Login</title>
+	</head>
+	
+	<body>
+		<center>
+			<form>
+				 <div>
+					<font>Username</font> <input type="text" name="username" value="" />
+					<br>
+					<font>Password</font> <input type="password" name="password" value="" />
+					<br>
+					<a href = "app/page">
+						<input type="submit" value="Login" name="login" />
+					</a>
+				</div>
+			</form>
+		</center>
+	</body>
 </html>

@@ -18,8 +18,10 @@ from django.contrib import admin
 from app import views
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-	url(r'^', views.Home, name = "homepage"),
-	url(r'^register/', views.Register, name = "register"),
-	url(r'^login/', views.Login, name = "login"),
+	url(r'^home', views.Home, name = "homepage"),
+	url(r'^app/register', views.Register, name = "register"),
+	url(r'^app/page', views.Page, name = "page"),
+	url(r'^app/login', views.Login, name = "login"),
+	url(r'^$', views.Home, name= "homepage"),
 	
 ]

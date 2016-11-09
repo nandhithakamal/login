@@ -1,0 +1,21 @@
+body {
+	background-color : #110275;
+	font-family : "Comic Sans MS", cursive, sans-serif;
+	color : orange;
+	
+}
+a{
+	padding : 50px 20px;
+	
+}
+div {
+	padding-top : 100px;
+}
+
+input {
+	margin-bottom : 20px;
+	margin-left : 15px;
+}
+font{
+	size : 26;
+}
