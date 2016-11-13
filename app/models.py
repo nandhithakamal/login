@@ -12,7 +12,7 @@ class User(models.Model) :
 	middleName = models.CharField(max_length = 20, null = True, blank = True)
 	lastName = models.CharField(max_length = 20, null = False)
 	country = models.CharField(max_length = 50, choices = countries, default = India)
-	emailID = models.CharField(max_length = 50, validators =[EmailValidator()], null = False, default = "example@example.com")
+	emailID = models.EmailField(max_length = 50, null = False, default = "example@example.com", validators = [EmailValidator])
 	username = models.CharField(max_length = 50, primary_key = True)
 	password = models.CharField(max_length = 32, validators = [MinLengthValidator(8)], )
 	
