@@ -9,11 +9,12 @@
 	
 	<body>
 		<center>
-			<form>
+			<form action = "/app/page/" >
+				{% csrf_token %}
 				 <div>
-					<font>Username</font> <input type="text" name="username" value="" />
+					<font>Username</font> <input type="text" name="username" />
 					<br>
-					<font>Password</font> <input type="password" name="password" value="" />
+					<font>Password</font> <input type="password" name="password"  />
 					<br>
 					<a href = "app/page">
 						<input type="submit" value="Login" name="login" />
